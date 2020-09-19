@@ -8,6 +8,18 @@ use Illuminate\Support\Facades\DB;
 class IngresarFlujoController extends Controller
 {
     public function IngreoDeDinero(Request $data) {
-        return $data["ingreso"];
+        try{
+            DB::table("flujo_de_dinero")->insert([
+                "flujo" => 'Positivo',
+                "ingreso" => $data['ingreso'],
+                "tipo" => $data['tipo'],
+                "fecha" => '0'
+            ]);
+        }
+        catch(Exeption $e){
+            return $e;
+        }
+        
+
     }
 }

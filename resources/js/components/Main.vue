@@ -71,13 +71,15 @@ export default {
       menorIngreso: 20,
       mayorIngreso: 22,
       ingresosEgresos: 0
+      tipoIngresoEgreso: 0
     };
   },
 
   methods: {
     ingresoDeDinero() {
       axios.post('/IngresoDeDinero', {
-        ingreso: this.ingresosEgresos
+        ingreso: this.ingresosEgresos,
+        tipo: this.tipoIngresoEgreso
       }).then(resolve => {
         console.log(resolve.data);
       });
