@@ -69,8 +69,19 @@ export default {
       saldoActual: 6000,
       flujoDinero: 5000,
       menorIngreso: 20,
-      mayorIngreso: 22
+      mayorIngreso: 22,
+      ingresosEgresos: 0
     };
+  },
+
+  methods: {
+    ingresoDeDinero() {
+      axios.post('/IngresoDeDinero', {
+        ingreso: this.ingresosEgresos
+      }).then(resolve => {
+        console.log(resolve.data);
+      });
+    }
   }
 };
 </script>
