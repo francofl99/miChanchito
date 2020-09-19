@@ -9,8 +9,7 @@ class IngresarFlujoController extends Controller
 {
     public function IngreoDeDinero(Request $data) {
         try{
-            DB::table("flujo_de_dinero")->insert([
-                "flujo" => 'Positivo',
+            DB::table("ingreso_de_dinero")->insert([
                 "ingreso" => $data['ingreso'],
                 "tipo" => $data['tipo'],
                 "fecha" => '0'
@@ -19,7 +18,5 @@ class IngresarFlujoController extends Controller
         catch(Exeption $e){
             return $e;
         }
-        
-
     }
 }
