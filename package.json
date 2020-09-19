@@ -30,6 +30,7 @@
     "dependencies": {
         "axios": "^0.19.2",
         "moment": "^2.28.0",
-        "tailwindcss": "^1.8.10"
+        "tailwindcss": "^1.8.10",
+        "v-calendar": "^1.0.8"
     }
 }
