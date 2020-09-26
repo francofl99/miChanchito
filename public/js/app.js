@@ -2011,6 +2011,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Main",
   data: function data() {
@@ -2018,8 +2041,30 @@ __webpack_require__.r(__webpack_exports__);
       saldoActual: 6000,
       flujoDinero: 5000,
       menorIngreso: 20,
-      mayorIngreso: 22
+      mayorIngreso: 22,
+      ingresosEgresos: 0,
+      tipoIngresoEgreso: 0
     };
+  },
+  computed: {
+    totalRandom: function totalRandom() {
+      return this.saldoActual + 5000;
+    }
+  },
+  watch: {
+    totalRandom: function totalRandom(newValue, oldValue) {
+      console.log(newValue, oldValue);
+    }
+  },
+  methods: {
+    ingresoDeDinero: function ingresoDeDinero() {
+      axios.post('/IngresoDeDinero', {
+        ingreso: this.ingresosEgresos,
+        tipo: this.tipoIngresoEgreso
+      }).then(function (resolve) {
+        console.log(resolve.data);
+      });
+    }
   }
 });
 
@@ -38369,7 +38414,38 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _vm._m(0)
+        _c("div", { staticClass: "p-2 w-full h-24 bg-blue-400 mt-4 rounded" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "w-11/12 flex items-center justify-between" },
+            [
+              _vm._m(1),
+              _vm._v(" "),
+              _c("div", { staticClass: "w-auto h-6 mt-5" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass:
+                      "rounded-full font-semibold bg-green-300 text-black text-opacity-75 px-3",
+                    on: { click: function($event) {} }
+                  },
+                  [_vm._v("\n            Ingreso\n          ")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass:
+                      "rounded-full font-semibold bg-red-400 text-black"
+                  },
+                  [_vm._v("\n            Engreso\n          ")]
+                )
+              ])
+            ]
+          )
+        ])
       ]
     )
   ])
@@ -38379,65 +38455,54 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "p-2 w-full h-24 bg-blue-400 mt-4 rounded" },
-      [
-        _c("form", { staticClass: "w-full max-w-lg" }, [
-          _c("div", { staticClass: "flex flex-wrap -mx-3 mb-6" }, [
-            _c("div", { staticClass: "w-full md:w-1/2 px-3 mb-6 md:mb-0" }, [
-              _c(
-                "label",
-                {
-                  staticClass:
-                    "block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2",
-                  attrs: { for: "grid-first-name" }
-                },
-                [_vm._v("\n              First Name\n            ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass:
-                  "appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white",
-                attrs: {
-                  id: "grid-first-name",
-                  type: "text",
-                  placeholder: "Jane"
-                }
-              }),
-              _vm._v(" "),
-              _c("p", { staticClass: "text-red-500 text-xs italic" }, [
-                _vm._v(
-                  "\n              Please fill out this field.\n            "
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "w-full md:w-1/2 px-3" }, [
-              _c(
-                "label",
-                {
-                  staticClass:
-                    "block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2",
-                  attrs: { for: "grid-last-name" }
-                },
-                [_vm._v("\n              Last Name\n            ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass:
-                  "appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500",
-                attrs: {
-                  id: "grid-last-name",
-                  type: "text",
-                  placeholder: "Doe"
-                }
-              })
-            ])
+    return _c("div", { staticClass: "w-11/12 flex flex-wrap" }, [
+      _c(
+        "label",
+        {
+          staticClass: "w-full text-sm font-light",
+          attrs: { for: "ingresosEgresos" }
+        },
+        [_vm._v("\n          Actualizar ingresos/egresos\n        ")]
+      ),
+      _vm._v(" "),
+      _c("input", {
+        staticClass: "bg-pink-200 placeholder-pink-100 rounded-md pl-2 w-full",
+        attrs: { id: "ingresosEgresos", type: "number", placeholder: "4000" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "w-3/5 flex flex-wrap" }, [
+      _c(
+        "label",
+        {
+          staticClass: "w-full text-sm font-light",
+          attrs: { for: "ingresosEgresos" }
+        },
+        [_vm._v("\n            Tipo\n          ")]
+      ),
+      _vm._v(" "),
+      _c(
+        "select",
+        {
+          staticClass:
+            "bg-pink-200 placeholder-pink-100 rounded-md font-light text-pink-600",
+          attrs: { id: "ingresosEgresos", type: "number", placeholder: "4000" }
+        },
+        [
+          _c("option", { attrs: { id: "1", value: "comida" } }, [
+            _vm._v("\n              Comida\n            ")
+          ]),
+          _vm._v(" "),
+          _c("option", { attrs: { id: "2", value: "Bebidas" } }, [
+            _vm._v("\n              Bebidas\n            ")
           ])
-        ])
-      ]
-    )
+        ]
+      )
+    ])
   }
 ]
 render._withStripped = true
@@ -50695,15 +50760,14 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*!********************************************!*\
   !*** ./resources/js/components/Inicio.vue ***!
   \********************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Inicio_vue_vue_type_template_id_2bdc2210___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Inicio.vue?vue&type=template&id=2bdc2210& */ "./resources/js/components/Inicio.vue?vue&type=template&id=2bdc2210&");
 /* harmony import */ var _Inicio_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Inicio.vue?vue&type=script&lang=js& */ "./resources/js/components/Inicio.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Inicio_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Inicio_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -50733,7 +50797,7 @@ component.options.__file = "resources/js/components/Inicio.vue"
 /*!*********************************************************************!*\
   !*** ./resources/js/components/Inicio.vue?vue&type=script&lang=js& ***!
   \*********************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

@@ -20,41 +20,64 @@
         </div>
       </div>
       <div class="p-2 w-full h-24 bg-blue-400 mt-4 rounded">
-        <form class="w-full max-w-lg">
-          <div class="flex flex-wrap -mx-3 mb-6">
-            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-              <label
-                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-first-name"
+        <div class="w-11/12 flex flex-wrap">
+          <label
+            for="ingresosEgresos"
+            class="w-full text-sm font-light"
+          >
+            Actualizar ingresos/egresos
+          </label>
+
+          <input
+            id="ingresosEgresos"
+            type="number"
+            placeholder="4000"
+            class="bg-pink-200 placeholder-pink-100 rounded-md pl-2 w-full"
+          >
+        </div>
+
+        <div class="w-11/12 flex items-center justify-between">
+          <div class="w-3/5 flex flex-wrap">
+            <label
+              for="ingresosEgresos"
+              class="w-full text-sm font-light"
+            >
+              Tipo
+            </label>
+
+            <select
+              id="ingresosEgresos"
+              type="number"
+              placeholder="4000"
+              class="bg-pink-200 placeholder-pink-100 rounded-md font-light text-pink-600"
+            >
+              <option
+                id="1"
+                value="comida"
               >
-                First Name
-              </label>
-              <input
-                id="grid-first-name"
-                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                type="text"
-                placeholder="Jane"
+                Comida
+              </option>
+              <option
+                id="2"
+                value="Bebidas"
               >
-              <p class="text-red-500 text-xs italic">
-                Please fill out this field.
-              </p>
-            </div>
-            <div class="w-full md:w-1/2 px-3">
-              <label
-                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-last-name"
-              >
-                Last Name
-              </label>
-              <input
-                id="grid-last-name"
-                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                type="text"
-                placeholder="Doe"
-              >
-            </div>
+                Bebidas
+              </option>
+            </select>
           </div>
-        </form>
+
+          <div class="w-auto h-6 mt-5">
+            <button
+              class="rounded-full font-semibold bg-green-300 text-black text-opacity-75 px-3"
+              @click=""
+            >
+              Ingreso
+            </button>
+            <button class="rounded-full font-semibold bg-red-400 text-black">
+              Engreso
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -70,9 +93,21 @@ export default {
       flujoDinero: 5000,
       menorIngreso: 20,
       mayorIngreso: 22,
-      ingresosEgresos: 0
+      ingresosEgresos: 0,
       tipoIngresoEgreso: 0
     };
+  },
+
+  computed: {
+    totalRandom() {
+      return this.saldoActual + 5000;
+    }
+  },
+
+  watch: {
+    totalRandom(newValue, oldValue) {
+      console.log(newValue, oldValue);
+    }
   },
 
   methods: {
