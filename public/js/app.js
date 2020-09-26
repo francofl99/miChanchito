@@ -2034,6 +2034,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Main",
   data: function data() {
@@ -2043,7 +2047,7 @@ __webpack_require__.r(__webpack_exports__);
       menorIngreso: 20,
       mayorIngreso: 22,
       ingresosEgresos: 0,
-      tipoIngresoEgreso: 0
+      tipoIngresoEgreso: ""
     };
   },
   computed: {
@@ -2058,7 +2062,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     ingresoDeDinero: function ingresoDeDinero() {
-      axios.post('/IngresoDeDinero', {
+      axios.post("/IngresoDeDinero", {
         ingreso: this.ingresosEgresos,
         tipo: this.tipoIngresoEgreso
       }).then(function (resolve) {
@@ -6502,7 +6506,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".width-of-main[data-v-b9c20fb8] {\n  width: calc(100vw - 5rem);\n}\n.container-info-cartera[data-v-b9c20fb8] {\n  width: 32rem;\n}\n\n", ""]);
+exports.push([module.i, ".width-of-main[data-v-b9c20fb8] {\n  width: calc(100vw - 5rem);\n}\n.container-info-cartera[data-v-b9c20fb8] {\n  width: 32rem;\n}\n", ""]);
 
 // exports
 
@@ -38376,7 +38380,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: " h-screen width-of-main flex" }, [
+  return _c("div", { staticClass: "h-screen width-of-main flex" }, [
     _c(
       "div",
       { staticClass: "flex h-48 flex-wrap container-info-cartera pt-8 pl-4" },
@@ -38386,7 +38390,7 @@ var render = function() {
             "div",
             {
               staticClass:
-                "pl-2 w-56 h-16 flex flex-wrap justify-start items-center bg-red-400 rounded"
+                "pl-2 w-56 h-16 flex flex-wrap justify-start items-center bg-pink-300 rounded"
             },
             [
               _c("h5", { staticClass: "w-full text-lg" }, [
@@ -38401,7 +38405,7 @@ var render = function() {
             ]
           ),
           _vm._v(" "),
-          _c("div", { staticClass: "pl-2 w-56 h-16 bg-green-400 rounded" }, [
+          _c("div", { staticClass: "pl-2 w-56 h-16 bg-pink-300 rounded" }, [
             _c("h5", { staticClass: "w-full text-lg" }, [
               _vm._v("\n          Mayor Ingreso "),
               _c("b", [_vm._v("$" + _vm._s(_vm.menorIngreso))])
@@ -38414,14 +38418,104 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "p-2 w-full h-24 bg-blue-400 mt-4 rounded" }, [
-          _vm._m(0),
+        _c("div", { staticClass: "p-2 w-full h-32 bg-pink-300 mt-4 rounded" }, [
+          _c("div", { staticClass: "w-11/12 flex flex-wrap" }, [
+            _c(
+              "label",
+              {
+                staticClass: "w-full text-sm font-light",
+                attrs: { for: "ingresosEgresos" }
+              },
+              [_vm._v("\n          Actualizar ingresos/egresos\n        ")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.ingresosEgresos,
+                  expression: "ingresosEgresos"
+                }
+              ],
+              staticClass:
+                "bg-pink-200 placeholder-black rounded-md pl-2 w-full",
+              attrs: {
+                id: "ingresosEgresos",
+                type: "number",
+                placeholder: "4000"
+              },
+              domProps: { value: _vm.ingresosEgresos },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.ingresosEgresos = $event.target.value
+                }
+              }
+            })
+          ]),
           _vm._v(" "),
           _c(
             "div",
             { staticClass: "w-11/12 flex items-center justify-between" },
             [
-              _vm._m(1),
+              _c("div", { staticClass: "w-3/5 flex flex-wrap" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "w-full text-sm font-light",
+                    attrs: { for: "ingresosEgresos" }
+                  },
+                  [_vm._v("\n            Tipo\n          ")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.tipoIngresoEgreso,
+                        expression: "tipoIngresoEgreso"
+                      }
+                    ],
+                    staticClass:
+                      "bg-pink-200 placeholder-pink-100 rounded-md font-light text-pink-600",
+                    attrs: {
+                      id: "ingresosEgresos",
+                      type: "number",
+                      placeholder: "4000"
+                    },
+                    on: {
+                      change: function($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function(o) {
+                            return o.selected
+                          })
+                          .map(function(o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.tipoIngresoEgreso = $event.target.multiple
+                          ? $$selectedVal
+                          : $$selectedVal[0]
+                      }
+                    }
+                  },
+                  [
+                    _c("option", { attrs: { id: "1", value: "comida" } }, [
+                      _vm._v("\n              Comida\n            ")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { id: "2", value: "Bebidas" } }, [
+                      _vm._v("\n              Bebidas\n            ")
+                    ])
+                  ]
+                )
+              ]),
               _vm._v(" "),
               _c("div", { staticClass: "w-auto h-6 mt-5" }, [
                 _c(
@@ -38429,7 +38523,11 @@ var render = function() {
                   {
                     staticClass:
                       "rounded-full font-semibold bg-green-300 text-black text-opacity-75 px-3",
-                    on: { click: function($event) {} }
+                    on: {
+                      click: function($event) {
+                        return _vm.ingresoDeDinero()
+                      }
+                    }
                   },
                   [_vm._v("\n            Ingreso\n          ")]
                 ),
@@ -38450,61 +38548,7 @@ var render = function() {
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-11/12 flex flex-wrap" }, [
-      _c(
-        "label",
-        {
-          staticClass: "w-full text-sm font-light",
-          attrs: { for: "ingresosEgresos" }
-        },
-        [_vm._v("\n          Actualizar ingresos/egresos\n        ")]
-      ),
-      _vm._v(" "),
-      _c("input", {
-        staticClass: "bg-pink-200 placeholder-pink-100 rounded-md pl-2 w-full",
-        attrs: { id: "ingresosEgresos", type: "number", placeholder: "4000" }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-3/5 flex flex-wrap" }, [
-      _c(
-        "label",
-        {
-          staticClass: "w-full text-sm font-light",
-          attrs: { for: "ingresosEgresos" }
-        },
-        [_vm._v("\n            Tipo\n          ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "select",
-        {
-          staticClass:
-            "bg-pink-200 placeholder-pink-100 rounded-md font-light text-pink-600",
-          attrs: { id: "ingresosEgresos", type: "number", placeholder: "4000" }
-        },
-        [
-          _c("option", { attrs: { id: "1", value: "comida" } }, [
-            _vm._v("\n              Comida\n            ")
-          ]),
-          _vm._v(" "),
-          _c("option", { attrs: { id: "2", value: "Bebidas" } }, [
-            _vm._v("\n              Bebidas\n            ")
-          ])
-        ]
-      )
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

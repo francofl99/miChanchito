@@ -1,8 +1,10 @@
 <template>
-  <div class=" h-screen width-of-main flex">
+  <div class="h-screen width-of-main flex">
     <div class="flex h-48 flex-wrap container-info-cartera pt-8 pl-4">
       <div class="flex justify-between w-full">
-        <div class="pl-2 w-56 h-16 flex flex-wrap justify-start items-center bg-red-400 rounded">
+        <div
+          class="pl-2 w-56 h-16 flex flex-wrap justify-start items-center bg-pink-300 rounded"
+        >
           <h5 class="w-full text-lg">
             Saldo Actual <b>${{ saldoActual }}</b>
           </h5>
@@ -10,7 +12,7 @@
             Flujo de Dinero <b>${{ flujoDinero }}</b>
           </h5>
         </div>
-        <div class="pl-2 w-56 h-16 bg-green-400 rounded">
+        <div class="pl-2 w-56 h-16 bg-pink-300 rounded">
           <h5 class="w-full text-lg">
             Mayor Ingreso <b>${{ menorIngreso }}</b>
           </h5>
@@ -19,7 +21,7 @@
           </h5>
         </div>
       </div>
-      <div class="p-2 w-full h-24 bg-blue-400 mt-4 rounded">
+      <div class="p-2 w-full h-32 bg-pink-300 mt-4 rounded">
         <div class="w-11/12 flex flex-wrap">
           <label
             for="ingresosEgresos"
@@ -30,9 +32,10 @@
 
           <input
             id="ingresosEgresos"
+            v-model="ingresosEgresos"
             type="number"
             placeholder="4000"
-            class="bg-pink-200 placeholder-pink-100 rounded-md pl-2 w-full"
+            class="bg-pink-200 placeholder-black rounded-md pl-2 w-full"
           >
         </div>
 
@@ -47,6 +50,7 @@
 
             <select
               id="ingresosEgresos"
+              v-model="tipoIngresoEgreso"
               type="number"
               placeholder="4000"
               class="bg-pink-200 placeholder-pink-100 rounded-md font-light text-pink-600"
@@ -69,7 +73,7 @@
           <div class="w-auto h-6 mt-5">
             <button
               class="rounded-full font-semibold bg-green-300 text-black text-opacity-75 px-3"
-              @click=""
+              @click="ingresoDeDinero()"
             >
               Ingreso
             </button>
@@ -85,7 +89,7 @@
 
 <script>
 export default {
-  name:"Main",
+  name: "Main",
 
   data() {
     return {
@@ -94,43 +98,43 @@ export default {
       menorIngreso: 20,
       mayorIngreso: 22,
       ingresosEgresos: 0,
-      tipoIngresoEgreso: 0
+      tipoIngresoEgreso: ""
     };
   },
 
   computed: {
     totalRandom() {
       return this.saldoActual + 5000;
-    }
+    },
   },
 
   watch: {
     totalRandom(newValue, oldValue) {
       console.log(newValue, oldValue);
-    }
+    },
   },
 
   methods: {
     ingresoDeDinero() {
-      axios.post('/IngresoDeDinero', {
-        ingreso: this.ingresosEgresos,
-        tipo: this.tipoIngresoEgreso
-      }).then(resolve => {
-        console.log(resolve.data);
-      });
-    }
-  }
+      axios
+        .post("/IngresoDeDinero", {
+          ingreso: this.ingresosEgresos,
+          tipo: this.tipoIngresoEgreso
+        })
+        .then((resolve) => {
+          console.log(resolve.data);
+        });
+    },
+  },
 };
 </script>
 
 <style scoped>
-
 .width-of-main {
-    width: calc(100vw - 5rem);
+  width: calc(100vw - 5rem);
 }
 
 .container-info-cartera {
-    width: 32rem;
+  width: 32rem;
 }
-
 </style>
