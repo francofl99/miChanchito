@@ -1,20 +1,20 @@
 <template>
   <div class="h-screen width-of-main flex flex-wrap">
     <SeccionIngresosEgresos />
-    <GraficoDeIngresosEgresos />
+    <GraficoIngresosEgresos />
   </div>
 </template>
 
 <script>
 import SeccionIngresosEgresos from "./SeccionIngresosEgresos";
-import GraficoDeIngresosEgresos from "./GraficoDeIngresosEgresos";
+import GraficoIngresosEgresos from "./GraficoIngresosEgresos";
 
 export default {
   name: "Main",
 
   components: {
     SeccionIngresosEgresos,
-    GraficoDeIngresosEgresos
+    GraficoIngresosEgresos
   }
 };
 </script>

@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  main: "GraficoDeIngresosEgresos",
+  main: "GraficoIngresosEgresos",
 
   data() {
     return {
