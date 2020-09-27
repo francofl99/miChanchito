@@ -117,11 +117,5 @@ export default {
 </script>
 
 <style>
-.width-of-main {
-  width: calc(100vw - 5rem);
-}
 
-.container-info-cartera {
-  width: 32rem;
-}
 </style>

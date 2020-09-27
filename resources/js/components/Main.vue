@@ -8,13 +8,7 @@
       <ActualizarIngresosEgresos />
     </div>
 
-    <div class="w-full">
-      <area-chart
-        class="w-full"
-        :colors="['pink']"
-        :data="ingresosList.map(item => [item.fecha, item.ingreso])"
-      />
-    </div>
+    <GraficoDeIngresosEgresos />
   </div>
 </template>
 
@@ -22,6 +16,7 @@
 import InformacionSaldo from "./InformacionSaldo";
 import InformacionIngresoEgreso from "./InformacionIngresoEgreso";
 import ActualizarIngresosEgresos from "./ActualizarIngresosEgresos";
+import GraficoDeIngresosEgresos from "./GraficoDeIngresosEgresos";
 
 export default {
   name: "Main",
@@ -29,30 +24,9 @@ export default {
   components: {
     InformacionSaldo,
     InformacionIngresoEgreso,
-    ActualizarIngresosEgresos
-  },
-
-  data() {
-    return {
-      ingresosList: []
-    };
-  },
-
-  watch: {
-    ingresosList(newValue, oldValue) {
-      console.log(newValue);
-    }
-  },
-
-  mounted() {
-    this.getIngresosList();
-  },
-
-  methods: {
-    getIngresosList() {
-      axios.get("/api/bringAllIncome").then(response => this.ingresosList = response.data);
-    },
-  },
+    ActualizarIngresosEgresos,
+    GraficoDeIngresosEgresos
+  }
 };
 </script>
 
