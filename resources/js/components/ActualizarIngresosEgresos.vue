@@ -2,9 +2,8 @@
   <div class="p-2 w-full h-32 bg-pink-300 mt-4 rounded">
     <InputActualizarIngresosEgresos />
 
-    <div class="w-11/12 flex items-center justify-between">
+    <div class="flex">
       <InputTipoIngresosEgresos />
-
       <BotonesFechaIngresoEgreso />
     </div>
   </div>

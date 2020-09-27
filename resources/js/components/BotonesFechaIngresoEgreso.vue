@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-6 mt-5 flex justify-between">
+  <div class="w-full flex h-6 mt-5 ">
     <DatePicker
       v-model="fechaDeRegistro"
       :popover="{ placement: 'bottom', visibility: 'click' }"

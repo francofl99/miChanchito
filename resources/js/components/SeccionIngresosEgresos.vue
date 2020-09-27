@@ -1,24 +1,19 @@
 <template>
-  <div class="flex h-48 flex-wrap container-info-cartera pt-8 pl-4 w-full">
-    <div class="flex justify-between w-full">
-      <InformacionSaldo />
-      <InformacionIngresoEgreso />
-    </div>
+  <div class="h-48 container-info-cartera">
+    <Informacion />
     <ActualizarIngresosEgresos />
   </div>
 </template>
 
 <script>
-import InformacionSaldo from "./InformacionSaldo";
-import InformacionIngresoEgreso from "./InformacionIngresoEgreso";
+import Informacion from "./Informacion";
 import ActualizarIngresosEgresos from "./ActualizarIngresosEgresos";
 
 export default {
   name: "SeccionIngresosEgresos",
 
   components: {
-    InformacionSaldo,
-    InformacionIngresoEgreso,
+    Informacion,
     ActualizarIngresosEgresos
   }
 
@@ -26,5 +21,7 @@ export default {
 </script>
 
 <style>
-
+.container-info-cartera {
+  width: 32rem;
+}
 </style>

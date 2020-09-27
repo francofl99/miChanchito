@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen width-of-main flex flex-wrap">
+  <div class="h-screen width-of-main flex flex-wrap p-6">
     <SeccionIngresosEgresos />
     <GraficoIngresosEgresos />
   </div>
@@ -22,9 +22,5 @@ export default {
 <style scoped>
 .width-of-main {
   width: calc(100vw - 5rem);
-}
-
-.container-info-cartera {
-  width: 32rem;
 }
 </style>
