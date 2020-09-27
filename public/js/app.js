@@ -1908,6 +1908,44 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _InputActualizarIngresosEgresos__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./InputActualizarIngresosEgresos */ "./resources/js/components/InputActualizarIngresosEgresos.vue");
+/* harmony import */ var _InputTipoIngresosEgresos__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./InputTipoIngresosEgresos */ "./resources/js/components/InputTipoIngresosEgresos.vue");
+/* harmony import */ var _BotonesFechaIngresoEgreso__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BotonesFechaIngresoEgreso */ "./resources/js/components/BotonesFechaIngresoEgreso.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "ActualizarIngresosEgresos",
+  components: {
+    InputActualizarIngresosEgresos: _InputActualizarIngresosEgresos__WEBPACK_IMPORTED_MODULE_0__["default"],
+    InputTipoIngresosEgresos: _InputTipoIngresosEgresos__WEBPACK_IMPORTED_MODULE_1__["default"],
+    BotonesFechaIngresoEgreso: _BotonesFechaIngresoEgreso__WEBPACK_IMPORTED_MODULE_2__["default"]
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/BotonesFechaIngresoEgreso.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/BotonesFechaIngresoEgreso.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony import */ var v_calendar_lib_components_date_picker_umd__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! v-calendar/lib/components/date-picker.umd */ "./node_modules/v-calendar/lib/components/date-picker.umd.js");
 /* harmony import */ var v_calendar_lib_components_date_picker_umd__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(v_calendar_lib_components_date_picker_umd__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
@@ -1940,68 +1978,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "ActualizarIngresosEgresos",
+  name: "BotonesFechaIngresoEgreso",
   components: {
     DatePicker: v_calendar_lib_components_date_picker_umd__WEBPACK_IMPORTED_MODULE_0___default.a
   },
   data: function data() {
     return {
-      ingresosEgresos: 0,
-      tipoIngresoEgreso: "",
       fechaDeRegistro: ""
     };
   },
@@ -2175,6 +2160,97 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/InputActualizarIngresosEgresos.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/InputActualizarIngresosEgresos.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "InputActualizarIngresosEgresos",
+  data: function data() {
+    return {
+      ingresosEgresos: 0
+    };
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/InputTipoIngresosEgresos.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/InputTipoIngresosEgresos.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "InputTipoIngresosEgresos",
+  data: function data() {
+    return {
+      tipoIngresoEgreso: ""
+    };
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Main.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Main.vue?vue&type=script&lang=js& ***!
@@ -2184,10 +2260,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _InformacionSaldo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./InformacionSaldo */ "./resources/js/components/InformacionSaldo.vue");
-/* harmony import */ var _InformacionIngresoEgreso__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./InformacionIngresoEgreso */ "./resources/js/components/InformacionIngresoEgreso.vue");
-/* harmony import */ var _ActualizarIngresosEgresos__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ActualizarIngresosEgresos */ "./resources/js/components/ActualizarIngresosEgresos.vue");
-/* harmony import */ var _GraficoDeIngresosEgresos__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./GraficoDeIngresosEgresos */ "./resources/js/components/GraficoDeIngresosEgresos.vue");
+/* harmony import */ var _SeccionIngresosEgresos__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SeccionIngresosEgresos */ "./resources/js/components/SeccionIngresosEgresos.vue");
+/* harmony import */ var _GraficoDeIngresosEgresos__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GraficoDeIngresosEgresos */ "./resources/js/components/GraficoDeIngresosEgresos.vue");
 //
 //
 //
@@ -2195,24 +2269,49 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-
-
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Main",
   components: {
+    SeccionIngresosEgresos: _SeccionIngresosEgresos__WEBPACK_IMPORTED_MODULE_0__["default"],
+    GraficoDeIngresosEgresos: _GraficoDeIngresosEgresos__WEBPACK_IMPORTED_MODULE_1__["default"]
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SeccionIngresosEgresos.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/SeccionIngresosEgresos.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _InformacionSaldo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./InformacionSaldo */ "./resources/js/components/InformacionSaldo.vue");
+/* harmony import */ var _InformacionIngresoEgreso__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./InformacionIngresoEgreso */ "./resources/js/components/InformacionIngresoEgreso.vue");
+/* harmony import */ var _ActualizarIngresosEgresos__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ActualizarIngresosEgresos */ "./resources/js/components/ActualizarIngresosEgresos.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "SeccionIngresosEgresos",
+  components: {
     InformacionSaldo: _InformacionSaldo__WEBPACK_IMPORTED_MODULE_0__["default"],
     InformacionIngresoEgreso: _InformacionIngresoEgreso__WEBPACK_IMPORTED_MODULE_1__["default"],
-    ActualizarIngresosEgresos: _ActualizarIngresosEgresos__WEBPACK_IMPORTED_MODULE_2__["default"],
-    GraficoDeIngresosEgresos: _GraficoDeIngresosEgresos__WEBPACK_IMPORTED_MODULE_3__["default"]
+    ActualizarIngresosEgresos: _ActualizarIngresosEgresos__WEBPACK_IMPORTED_MODULE_2__["default"]
   }
 });
 
@@ -101371,167 +101470,108 @@ var render = function() {
     "div",
     { staticClass: "p-2 w-full h-32 bg-pink-300 mt-4 rounded" },
     [
-      _c("div", { staticClass: "w-11/12 flex flex-wrap" }, [
-        _c(
-          "label",
-          {
-            staticClass: "w-full text-sm font-light",
-            attrs: { for: "ingresosEgresos" }
-          },
-          [_vm._v("\n      Actualizar ingresos/egresos\n    ")]
-        ),
-        _vm._v(" "),
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.ingresosEgresos,
-              expression: "ingresosEgresos"
-            }
-          ],
-          staticClass: "bg-pink-200 placeholder-black rounded-md pl-2 w-full",
-          attrs: { id: "ingresosEgresos", type: "number", placeholder: "4000" },
-          domProps: { value: _vm.ingresosEgresos },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
-              }
-              _vm.ingresosEgresos = $event.target.value
-            }
-          }
-        })
-      ]),
+      _c("InputActualizarIngresosEgresos"),
       _vm._v(" "),
-      _c("div", { staticClass: "w-11/12 flex items-center justify-between" }, [
-        _c("div", { staticClass: "w-3/5 flex flex-wrap" }, [
-          _c(
-            "label",
-            {
-              staticClass: "w-full text-sm font-light",
-              attrs: { for: "ingresosEgresos" }
-            },
-            [_vm._v("\n        Tipo\n      ")]
-          ),
+      _c(
+        "div",
+        { staticClass: "w-11/12 flex items-center justify-between" },
+        [
+          _c("InputTipoIngresosEgresos"),
           _vm._v(" "),
+          _c("BotonesFechaIngresoEgreso")
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/BotonesFechaIngresoEgreso.vue?vue&type=template&id=afdd7644&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/BotonesFechaIngresoEgreso.vue?vue&type=template&id=afdd7644& ***!
+  \****************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "w-full h-6 mt-5 flex justify-between" },
+    [
+      _c(
+        "DatePicker",
+        {
+          attrs: { popover: { placement: "bottom", visibility: "click" } },
+          model: {
+            value: _vm.fechaDeRegistro,
+            callback: function($$v) {
+              _vm.fechaDeRegistro = $$v
+            },
+            expression: "fechaDeRegistro"
+          }
+        },
+        [
           _c(
-            "select",
+            "button",
             {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.tipoIngresoEgreso,
-                  expression: "tipoIngresoEgreso"
-                }
-              ],
               staticClass:
-                "bg-pink-200 placeholder-pink-100 rounded-md font-light text-pink-600",
-              attrs: {
-                id: "ingresosEgresos",
-                type: "number",
-                placeholder: "4000"
-              },
-              on: {
-                change: function($event) {
-                  var $$selectedVal = Array.prototype.filter
-                    .call($event.target.options, function(o) {
-                      return o.selected
-                    })
-                    .map(function(o) {
-                      var val = "_value" in o ? o._value : o.value
-                      return val
-                    })
-                  _vm.tipoIngresoEgreso = $event.target.multiple
-                    ? $$selectedVal
-                    : $$selectedVal[0]
-                }
-              }
+                "p-2 bg-blue-500 hover:bg-blue-600 text-white rounded focus:outline-none"
             },
             [
-              _c("option", { attrs: { id: "1", value: "comida" } }, [
-                _vm._v("\n          Comida\n        ")
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { id: "2", value: "Bebidas" } }, [
-                _vm._v("\n          Bebidas\n        ")
-              ])
+              _c(
+                "svg",
+                {
+                  staticClass: "w-4 h-4 fill-current",
+                  attrs: {
+                    xmlns: "http://www.w3.org/2000/svg",
+                    viewBox: "0 0 20 20"
+                  }
+                },
+                [
+                  _c("path", {
+                    attrs: {
+                      d:
+                        "M1 4c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm2 2v12h14V6H3zm2-6h2v2H5V0zm8 0h2v2h-2V0zM5 9h2v2H5V9zm0 4h2v2H5v-2zm4-4h2v2H9V9zm0 4h2v2H9v-2zm4-4h2v2h-2V9zm0 4h2v2h-2v-2z"
+                    }
+                  })
+                ]
+              )
             ]
           )
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "w-full h-6 mt-5 flex justify-between" },
-          [
-            _c(
-              "DatePicker",
-              {
-                attrs: {
-                  popover: { placement: "bottom", visibility: "click" }
-                },
-                model: {
-                  value: _vm.fechaDeRegistro,
-                  callback: function($$v) {
-                    _vm.fechaDeRegistro = $$v
-                  },
-                  expression: "fechaDeRegistro"
-                }
-              },
-              [
-                _c(
-                  "button",
-                  {
-                    staticClass:
-                      "p-2 bg-blue-500 hover:bg-blue-600 text-white rounded focus:outline-none"
-                  },
-                  [
-                    _c(
-                      "svg",
-                      {
-                        staticClass: "w-4 h-4 fill-current",
-                        attrs: {
-                          xmlns: "http://www.w3.org/2000/svg",
-                          viewBox: "0 0 20 20"
-                        }
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            d:
-                              "M1 4c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm2 2v12h14V6H3zm2-6h2v2H5V0zm8 0h2v2h-2V0zM5 9h2v2H5V9zm0 4h2v2H5v-2zm4-4h2v2H9V9zm0 4h2v2H9v-2zm4-4h2v2h-2V9zm0 4h2v2h-2v-2z"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass:
-                  "rounded-full font-semibold bg-green-300 text-black text-opacity-75 px-3",
-                on: { click: _vm.ingresoDeDinero }
-              },
-              [_vm._v("\n        Ingreso\n      ")]
-            ),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "rounded-full font-semibold bg-red-400 text-black"
-              },
-              [_vm._v("\n        Engreso\n      ")]
-            )
-          ],
-          1
-        )
-      ])
-    ]
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass:
+            "rounded-full font-semibold bg-green-300 text-black text-opacity-75 px-3",
+          on: { click: _vm.ingresoDeDinero }
+        },
+        [_vm._v("\n    Ingreso\n  ")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        { staticClass: "rounded-full font-semibold bg-red-400 text-black" },
+        [_vm._v("\n    Engreso\n  ")]
+      )
+    ],
+    1
   )
 }
 var staticRenderFns = []
@@ -101558,7 +101598,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "w-full" },
+    { staticClass: "flex flex-wrap w-full" },
     [
       _c("area-chart", {
         staticClass: "w-full",
@@ -101734,6 +101774,135 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/InputActualizarIngresosEgresos.vue?vue&type=template&id=9ab78ede&":
+/*!*********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/InputActualizarIngresosEgresos.vue?vue&type=template&id=9ab78ede& ***!
+  \*********************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "w-11/12 flex flex-wrap" }, [
+    _c(
+      "label",
+      {
+        staticClass: "w-full text-sm font-light",
+        attrs: { for: "ingresosEgresos" }
+      },
+      [_vm._v("\n    Actualizar ingresos/egresos\n  ")]
+    ),
+    _vm._v(" "),
+    _c("input", {
+      directives: [
+        {
+          name: "model",
+          rawName: "v-model",
+          value: _vm.ingresosEgresos,
+          expression: "ingresosEgresos"
+        }
+      ],
+      staticClass: "bg-pink-200 placeholder-black rounded-md pl-2 w-full",
+      attrs: { id: "ingresosEgresos", type: "number", placeholder: "4000" },
+      domProps: { value: _vm.ingresosEgresos },
+      on: {
+        input: function($event) {
+          if ($event.target.composing) {
+            return
+          }
+          _vm.ingresosEgresos = $event.target.value
+        }
+      }
+    })
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/InputTipoIngresosEgresos.vue?vue&type=template&id=2707754d&":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/InputTipoIngresosEgresos.vue?vue&type=template&id=2707754d& ***!
+  \***************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "w-3/5 flex flex-wrap" }, [
+    _c(
+      "label",
+      {
+        staticClass: "w-full text-sm font-light",
+        attrs: { for: "ingresosEgresos" }
+      },
+      [_vm._v("\n    Tipo\n  ")]
+    ),
+    _vm._v(" "),
+    _c(
+      "select",
+      {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.tipoIngresoEgreso,
+            expression: "tipoIngresoEgreso"
+          }
+        ],
+        staticClass:
+          "bg-pink-200 placeholder-pink-100 rounded-md font-light text-pink-600",
+        attrs: { id: "ingresosEgresos", type: "number", placeholder: "4000" },
+        on: {
+          change: function($event) {
+            var $$selectedVal = Array.prototype.filter
+              .call($event.target.options, function(o) {
+                return o.selected
+              })
+              .map(function(o) {
+                var val = "_value" in o ? o._value : o.value
+                return val
+              })
+            _vm.tipoIngresoEgreso = $event.target.multiple
+              ? $$selectedVal
+              : $$selectedVal[0]
+          }
+        }
+      },
+      [
+        _c("option", { attrs: { id: "1", value: "comida" } }, [
+          _vm._v("\n      Comida\n    ")
+        ]),
+        _vm._v(" "),
+        _c("option", { attrs: { id: "2", value: "Bebidas" } }, [
+          _vm._v("\n      Bebidas\n    ")
+        ])
+      ]
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Main.vue?vue&type=template&id=b9c20fb8&scoped=true&":
 /*!*******************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Main.vue?vue&type=template&id=b9c20fb8&scoped=true& ***!
@@ -101751,29 +101920,47 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "h-screen width-of-main flex" },
+    { staticClass: "h-screen width-of-main flex flex-wrap" },
+    [_c("SeccionIngresosEgresos"), _vm._v(" "), _c("GraficoDeIngresosEgresos")],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SeccionIngresosEgresos.vue?vue&type=template&id=47173095&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/SeccionIngresosEgresos.vue?vue&type=template&id=47173095& ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "flex h-48 flex-wrap container-info-cartera pt-8 pl-4 w-full"
+    },
     [
       _c(
         "div",
-        { staticClass: "flex h-48 flex-wrap container-info-cartera pt-8 pl-4" },
-        [
-          _c(
-            "div",
-            { staticClass: "flex justify-between w-full" },
-            [
-              _c("InformacionSaldo"),
-              _vm._v(" "),
-              _c("InformacionIngresoEgreso")
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c("ActualizarIngresosEgresos")
-        ],
+        { staticClass: "flex justify-between w-full" },
+        [_c("InformacionSaldo"), _vm._v(" "), _c("InformacionIngresoEgreso")],
         1
       ),
       _vm._v(" "),
-      _c("GraficoDeIngresosEgresos")
+      _c("ActualizarIngresosEgresos")
     ],
     1
   )
@@ -114112,6 +114299,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/BotonesFechaIngresoEgreso.vue":
+/*!***************************************************************!*\
+  !*** ./resources/js/components/BotonesFechaIngresoEgreso.vue ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _BotonesFechaIngresoEgreso_vue_vue_type_template_id_afdd7644___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BotonesFechaIngresoEgreso.vue?vue&type=template&id=afdd7644& */ "./resources/js/components/BotonesFechaIngresoEgreso.vue?vue&type=template&id=afdd7644&");
+/* harmony import */ var _BotonesFechaIngresoEgreso_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BotonesFechaIngresoEgreso.vue?vue&type=script&lang=js& */ "./resources/js/components/BotonesFechaIngresoEgreso.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _BotonesFechaIngresoEgreso_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _BotonesFechaIngresoEgreso_vue_vue_type_template_id_afdd7644___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _BotonesFechaIngresoEgreso_vue_vue_type_template_id_afdd7644___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/BotonesFechaIngresoEgreso.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/BotonesFechaIngresoEgreso.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/components/BotonesFechaIngresoEgreso.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_BotonesFechaIngresoEgreso_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./BotonesFechaIngresoEgreso.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/BotonesFechaIngresoEgreso.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_BotonesFechaIngresoEgreso_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/BotonesFechaIngresoEgreso.vue?vue&type=template&id=afdd7644&":
+/*!**********************************************************************************************!*\
+  !*** ./resources/js/components/BotonesFechaIngresoEgreso.vue?vue&type=template&id=afdd7644& ***!
+  \**********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BotonesFechaIngresoEgreso_vue_vue_type_template_id_afdd7644___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./BotonesFechaIngresoEgreso.vue?vue&type=template&id=afdd7644& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/BotonesFechaIngresoEgreso.vue?vue&type=template&id=afdd7644&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BotonesFechaIngresoEgreso_vue_vue_type_template_id_afdd7644___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BotonesFechaIngresoEgreso_vue_vue_type_template_id_afdd7644___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/GraficoDeIngresosEgresos.vue":
 /*!**************************************************************!*\
   !*** ./resources/js/components/GraficoDeIngresosEgresos.vue ***!
@@ -114388,6 +114644,144 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/InputActualizarIngresosEgresos.vue":
+/*!********************************************************************!*\
+  !*** ./resources/js/components/InputActualizarIngresosEgresos.vue ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _InputActualizarIngresosEgresos_vue_vue_type_template_id_9ab78ede___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./InputActualizarIngresosEgresos.vue?vue&type=template&id=9ab78ede& */ "./resources/js/components/InputActualizarIngresosEgresos.vue?vue&type=template&id=9ab78ede&");
+/* harmony import */ var _InputActualizarIngresosEgresos_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./InputActualizarIngresosEgresos.vue?vue&type=script&lang=js& */ "./resources/js/components/InputActualizarIngresosEgresos.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _InputActualizarIngresosEgresos_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _InputActualizarIngresosEgresos_vue_vue_type_template_id_9ab78ede___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _InputActualizarIngresosEgresos_vue_vue_type_template_id_9ab78ede___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/InputActualizarIngresosEgresos.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/InputActualizarIngresosEgresos.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/components/InputActualizarIngresosEgresos.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_InputActualizarIngresosEgresos_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./InputActualizarIngresosEgresos.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/InputActualizarIngresosEgresos.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_InputActualizarIngresosEgresos_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/InputActualizarIngresosEgresos.vue?vue&type=template&id=9ab78ede&":
+/*!***************************************************************************************************!*\
+  !*** ./resources/js/components/InputActualizarIngresosEgresos.vue?vue&type=template&id=9ab78ede& ***!
+  \***************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InputActualizarIngresosEgresos_vue_vue_type_template_id_9ab78ede___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./InputActualizarIngresosEgresos.vue?vue&type=template&id=9ab78ede& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/InputActualizarIngresosEgresos.vue?vue&type=template&id=9ab78ede&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InputActualizarIngresosEgresos_vue_vue_type_template_id_9ab78ede___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InputActualizarIngresosEgresos_vue_vue_type_template_id_9ab78ede___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/InputTipoIngresosEgresos.vue":
+/*!**************************************************************!*\
+  !*** ./resources/js/components/InputTipoIngresosEgresos.vue ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _InputTipoIngresosEgresos_vue_vue_type_template_id_2707754d___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./InputTipoIngresosEgresos.vue?vue&type=template&id=2707754d& */ "./resources/js/components/InputTipoIngresosEgresos.vue?vue&type=template&id=2707754d&");
+/* harmony import */ var _InputTipoIngresosEgresos_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./InputTipoIngresosEgresos.vue?vue&type=script&lang=js& */ "./resources/js/components/InputTipoIngresosEgresos.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _InputTipoIngresosEgresos_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _InputTipoIngresosEgresos_vue_vue_type_template_id_2707754d___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _InputTipoIngresosEgresos_vue_vue_type_template_id_2707754d___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/InputTipoIngresosEgresos.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/InputTipoIngresosEgresos.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/InputTipoIngresosEgresos.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_InputTipoIngresosEgresos_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./InputTipoIngresosEgresos.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/InputTipoIngresosEgresos.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_InputTipoIngresosEgresos_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/InputTipoIngresosEgresos.vue?vue&type=template&id=2707754d&":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/components/InputTipoIngresosEgresos.vue?vue&type=template&id=2707754d& ***!
+  \*********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InputTipoIngresosEgresos_vue_vue_type_template_id_2707754d___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./InputTipoIngresosEgresos.vue?vue&type=template&id=2707754d& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/InputTipoIngresosEgresos.vue?vue&type=template&id=2707754d&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InputTipoIngresosEgresos_vue_vue_type_template_id_2707754d___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_InputTipoIngresosEgresos_vue_vue_type_template_id_2707754d___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/Main.vue":
 /*!******************************************!*\
   !*** ./resources/js/components/Main.vue ***!
@@ -114470,6 +114864,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Main_vue_vue_type_template_id_b9c20fb8_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Main_vue_vue_type_template_id_b9c20fb8_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/SeccionIngresosEgresos.vue":
+/*!************************************************************!*\
+  !*** ./resources/js/components/SeccionIngresosEgresos.vue ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _SeccionIngresosEgresos_vue_vue_type_template_id_47173095___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SeccionIngresosEgresos.vue?vue&type=template&id=47173095& */ "./resources/js/components/SeccionIngresosEgresos.vue?vue&type=template&id=47173095&");
+/* harmony import */ var _SeccionIngresosEgresos_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SeccionIngresosEgresos.vue?vue&type=script&lang=js& */ "./resources/js/components/SeccionIngresosEgresos.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _SeccionIngresosEgresos_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _SeccionIngresosEgresos_vue_vue_type_template_id_47173095___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _SeccionIngresosEgresos_vue_vue_type_template_id_47173095___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/SeccionIngresosEgresos.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/SeccionIngresosEgresos.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/SeccionIngresosEgresos.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_SeccionIngresosEgresos_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./SeccionIngresosEgresos.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SeccionIngresosEgresos.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_SeccionIngresosEgresos_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/SeccionIngresosEgresos.vue?vue&type=template&id=47173095&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/SeccionIngresosEgresos.vue?vue&type=template&id=47173095& ***!
+  \*******************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SeccionIngresosEgresos_vue_vue_type_template_id_47173095___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./SeccionIngresosEgresos.vue?vue&type=template&id=47173095& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SeccionIngresosEgresos.vue?vue&type=template&id=47173095&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SeccionIngresosEgresos_vue_vue_type_template_id_47173095___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SeccionIngresosEgresos_vue_vue_type_template_id_47173095___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

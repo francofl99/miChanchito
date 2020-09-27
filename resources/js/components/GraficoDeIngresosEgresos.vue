@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div class="flex flex-wrap w-full">
     <area-chart
       class="w-full"
       :colors="['pink']"
