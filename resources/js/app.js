@@ -4,8 +4,13 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
 
+
+import Chartkick from 'vue-chartkick';
+import Chart from 'chart.js';
+import DatePicker from 'v-calendar/lib/components/date-picker.umd';
+
+require('./bootstrap');
 window.Vue = require('vue');
 
 /**
@@ -20,6 +25,8 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('Inicio', require('./components/Inicio.vue').default);
+Vue.use(Chartkick.use(Chart));
+Vue.component('date-picker', DatePicker);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -30,3 +37,6 @@ Vue.component('Inicio', require('./components/Inicio.vue').default);
 const app = new Vue({
     el: '#app',
 });
+
+
+

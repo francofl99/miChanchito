@@ -2,128 +2,55 @@
   <div class="h-screen width-of-main flex">
     <div class="flex h-48 flex-wrap container-info-cartera pt-8 pl-4">
       <div class="flex justify-between w-full">
-        <div
-          class="pl-2 w-56 h-16 flex flex-wrap justify-start items-center bg-pink-300 rounded"
-        >
-          <h5 class="w-full text-lg">
-            Saldo Actual <b>${{ saldoActual }}</b>
-          </h5>
-          <h5 class="w-full text-lg">
-            Flujo de Dinero <b>${{ flujoDinero }}</b>
-          </h5>
-        </div>
-        <div class="pl-2 w-56 h-16 bg-pink-300 rounded">
-          <h5 class="w-full text-lg">
-            Mayor Ingreso <b>${{ menorIngreso }}</b>
-          </h5>
-          <h5 class="w-full text-lg">
-            Mayor egreso <b>${{ mayorIngreso }}</b>
-          </h5>
-        </div>
+        <InformacionSaldo />
+        <InformacionIngresoEgreso />
       </div>
-      <div class="p-2 w-full h-32 bg-pink-300 mt-4 rounded">
-        <div class="w-11/12 flex flex-wrap">
-          <label
-            for="ingresosEgresos"
-            class="w-full text-sm font-light"
-          >
-            Actualizar ingresos/egresos
-          </label>
+      <ActualizarIngresosEgresos />
+    </div>
 
-          <input
-            id="ingresosEgresos"
-            v-model="ingresosEgresos"
-            type="number"
-            placeholder="4000"
-            class="bg-pink-200 placeholder-black rounded-md pl-2 w-full"
-          >
-        </div>
-
-        <div class="w-11/12 flex items-center justify-between">
-          <div class="w-3/5 flex flex-wrap">
-            <label
-              for="ingresosEgresos"
-              class="w-full text-sm font-light"
-            >
-              Tipo
-            </label>
-
-            <select
-              id="ingresosEgresos"
-              v-model="tipoIngresoEgreso"
-              type="number"
-              placeholder="4000"
-              class="bg-pink-200 placeholder-pink-100 rounded-md font-light text-pink-600"
-            >
-              <option
-                id="1"
-                value="comida"
-              >
-                Comida
-              </option>
-              <option
-                id="2"
-                value="Bebidas"
-              >
-                Bebidas
-              </option>
-            </select>
-          </div>
-
-          <div class="w-auto h-6 mt-5">
-            <button
-              class="rounded-full font-semibold bg-green-300 text-black text-opacity-75 px-3"
-              @click="ingresoDeDinero()"
-            >
-              Ingreso
-            </button>
-            <button class="rounded-full font-semibold bg-red-400 text-black">
-              Engreso
-            </button>
-          </div>
-        </div>
-      </div>
+    <div class="w-full">
+      <area-chart
+        class="w-full"
+        :colors="['pink']"
+        :data="ingresosList.map(item => [item.fecha, item.ingreso])"
+      />
     </div>
   </div>
 </template>
 
 <script>
+import InformacionSaldo from "./InformacionSaldo";
+import InformacionIngresoEgreso from "./InformacionIngresoEgreso";
+import ActualizarIngresosEgresos from "./ActualizarIngresosEgresos";
+
 export default {
   name: "Main",
 
+  components: {
+    InformacionSaldo,
+    InformacionIngresoEgreso,
+    ActualizarIngresosEgresos
+  },
+
   data() {
     return {
-      saldoActual: 6000,
-      flujoDinero: 5000,
-      menorIngreso: 20,
-      mayorIngreso: 22,
-      ingresosEgresos: 0,
-      tipoIngresoEgreso: ""
+      ingresosList: []
     };
   },
 
-  computed: {
-    totalRandom() {
-      return this.saldoActual + 5000;
-    },
+  watch: {
+    ingresosList(newValue, oldValue) {
+      console.log(newValue);
+    }
   },
 
-  watch: {
-    totalRandom(newValue, oldValue) {
-      console.log(newValue, oldValue);
-    },
+  mounted() {
+    this.getIngresosList();
   },
 
   methods: {
-    ingresoDeDinero() {
-      axios
-        .post("/IngresoDeDinero", {
-          ingreso: this.ingresosEgresos,
-          tipo: this.tipoIngresoEgreso
-        })
-        .then((resolve) => {
-          console.log(resolve.data);
-        });
+    getIngresosList() {
+      axios.get("/api/bringAllIncome").then(response => this.ingresosList = response.data);
     },
   },
 };

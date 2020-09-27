@@ -1,9 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FlujoController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/IngresoDeDinero', 'IngresarFlujoController@IngreoDeDinero')->name("ingreoDeDinero");
+Route::post('/IngresoDeDinero', 'App\Http\Controllers\FlujoController@IngresoDeDinero')->name("ingresoDeDinero");
