@@ -1,9 +1,9 @@
 <template>
-  <div class="pl-2 w-56 h-16 bg-pink-300 rounded">
-    <h5 class="w-full text-lg">
+  <div class="pl-2 w-56 h-16 flex flex-wrap justify-start items-center bg-pink-300 rounded">
+    <h5 class="w-full text-pink-900">
       Mayor Ingreso <b>${{ menorIngreso }}</b>
     </h5>
-    <h5 class="w-full text-lg">
+    <h5 class="w-full text-pink-900">
       Mayor egreso <b>${{ mayorIngreso }}</b>
     </h5>
   </div>
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: "InformacionIngresoEgreso",
+  name: "InformacionMayorIngresoEgreso",
 
   data() {
     return {

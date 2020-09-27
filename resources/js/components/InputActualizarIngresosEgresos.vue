@@ -1,8 +1,8 @@
 <template>
-  <div class="w-11/12 flex flex-wrap">
+  <div class="w-full flex flex-wrap">
     <label
       for="ingresosEgresos"
-      class="w-full text-sm font-light"
+      class="w-full text-pink-900"
     >
       Actualizar ingresos/egresos
     </label>
@@ -11,8 +11,8 @@
       id="ingresosEgresos"
       v-model="ingresosEgresos"
       type="number"
-      placeholder="4000"
-      class="bg-pink-200 placeholder-black rounded-md pl-2 w-full"
+      placeholder="0"
+      class="bg-pink-200 placeholder-pink-900 rounded-md pl-2 w-full"
     >
   </div>
 </template>

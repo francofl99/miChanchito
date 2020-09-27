@@ -29,6 +29,7 @@
 <script>
 import DatePicker from 'v-calendar/lib/components/date-picker.umd';
 import moment from "moment";
+import axios from 'axios';
 
 export default {
   name: "BotonesFechaIngresoEgreso",
@@ -56,6 +57,9 @@ export default {
         })
         .then((resolve) => {
           console.log(resolve.data);
+        })
+        .catch(error => {
+          console.log(error);
         });
     }
   }

@@ -1,19 +1,19 @@
 <template>
   <div class="h-48 container-info-cartera">
-    <Informacion />
+    <InformacionIngresosEgresos />
     <ActualizarIngresosEgresos />
   </div>
 </template>
 
 <script>
-import Informacion from "./Informacion";
+import InformacionIngresosEgresos from "./InformacionIngresosEgresos";
 import ActualizarIngresosEgresos from "./ActualizarIngresosEgresos";
 
 export default {
   name: "SeccionIngresosEgresos",
 
   components: {
-    Informacion,
+    InformacionIngresosEgresos,
     ActualizarIngresosEgresos
   }
 

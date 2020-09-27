@@ -1,7 +1,6 @@
 <template>
-  <div class="flex flex-wrap w-full">
+  <div class="flex w-full">
     <area-chart
-      class="w-full"
       :colors="['pink']"
       :data="ingresosList.map(item => [item.fecha, item.ingreso])"
     />
@@ -9,6 +8,8 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   main: "GraficoIngresosEgresos",
 
@@ -30,10 +31,15 @@ export default {
 
   methods: {
     getIngresosList() {
-      axios.get("/api/bringAllIncome").then(response => this.ingresosList = response.data);
-    },
-  },
-
+      axios.get('/api/bringAllIncome')
+        .then((response) => {
+          this.ingresosList = response.data;
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    }
+  }
 };
 </script>
 

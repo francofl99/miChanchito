@@ -22,6 +22,11 @@ class FlujoController extends Controller
     }
 
     public function bringAllIncome() {
-        DB::table("ingreso_de_dinero")->get();
+        try {
+            return DB::table("ingreso_de_dinero")->get();
+
+        } catch (Exception $e) {
+            return $e;
+        }
     }
 }
