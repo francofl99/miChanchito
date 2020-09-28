@@ -9,3 +9,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get("/bringAllIncome", "App\Http\Controllers\FlujoController@bringAllIncome")->name("bringAllIncome");
+Route::get("/bringAllEpanses", "App\Http\Controllers\FlujoController@bringAllEpanses")->name("bringAllEpanses");

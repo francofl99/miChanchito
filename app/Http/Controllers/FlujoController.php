@@ -42,4 +42,13 @@ class FlujoController extends Controller
             return $e;
         }
     }
+
+    public function bringAllEpanses() {
+        try {
+            return DB::table("egreso_de_dinero")->get();
+
+        } catch (Exception $e) {
+            return $e;
+        }
+    }
 }
