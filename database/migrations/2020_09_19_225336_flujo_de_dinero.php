@@ -20,6 +20,13 @@ class FlujoDeDinero extends Migration
             $table->string("fecha");
 
         });
+
+        Schema::create('egreso_de_dinero', function (Blueprint $table) {
+            $table->increments("id")->start_from(0);
+            $table->string("egreso");
+            $table->string("tipo");
+            $table->string("fecha");
+        }); 
     }
 
     /**

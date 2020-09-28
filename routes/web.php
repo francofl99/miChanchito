@@ -8,3 +8,5 @@ Route::get('/', function () {
 });
 
 Route::post('/IngresoDeDinero', 'App\Http\Controllers\FlujoController@IngresoDeDinero')->name("ingresoDeDinero");
+Route::post('/EgresoDeDinero', 'App\Http\Controllers\FlujoController@EgresoDeDinero')->name("egresoDeDinero");
+

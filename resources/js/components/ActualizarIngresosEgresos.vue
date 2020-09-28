@@ -62,7 +62,7 @@
         >
           Ingreso
         </button>
-        <button class="rounded-full font-semibold bg-red-400 text-black">
+        <button class="rounded-full font-semibold bg-red-400 text-black" @click="egresoDeDinero">
           Engreso
         </button>
       </div>
@@ -100,6 +100,23 @@ export default {
       axios
         .post("/IngresoDeDinero", {
           ingreso: this.ingresosEgresos,
+          tipo: this.tipoIngresoEgreso,
+          fecha: parseDateToIso
+        })
+        .then((resolve) => {
+          console.log(resolve.data);
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    },
+
+    egresoDeDinero() {
+      let parseDateToIso = moment(this.fechaDeRegistro).toISOString();
+
+      axios
+        .post("/EgresoDeDinero", {
+          egreso: this.ingresosEgresos,
           tipo: this.tipoIngresoEgreso,
           fecha: parseDateToIso
         })
