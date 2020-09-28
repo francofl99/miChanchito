@@ -1,6 +1,6 @@
 <template>
   <div class="flex w-full">
-    <area-chart
+    <line-chart
       :colors="['pink']"
       :data="ingresosList.map(item => [item.fecha, item.ingreso])"
     />
