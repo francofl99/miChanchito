@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex w-full"
+    class="flex"
   >
     <line-chart
       :colors="['pink']"
