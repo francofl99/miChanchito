@@ -1,5 +1,5 @@
 <template>
-  <div class="h-48 container-info-cartera">
+  <div class="rounded-md p-2 h-64 container-info-cartera bg-gray-300">
     <InformacionIngresosEgresos />
     <ActualizarIngresosEgresos />
   </div>

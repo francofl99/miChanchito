@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen width-of-main flex flex-wrap p-6">
+  <div class=" bg-gray-400 main-style flex flex-wrap p-8">
     <SeccionIngresosEgresos />
     <Graficos />
   </div>
@@ -21,7 +21,8 @@ export default {
 </script>
 
 <style scoped>
-.width-of-main {
-  width: calc(100vw - 5rem);
+.main-style {
+  width: calc(100vw - 3rem);
+  height: calc(100vh - 3rem);
 }
 </style>

@@ -3,7 +3,7 @@
     class="flex"
   >
     <line-chart
-      :colors="['pink']"
+      :colors="['gray']"
       :data="egresosList.map(item => [item.fecha, item.egreso])"
     />
   </div>
@@ -19,12 +19,6 @@ export default {
     return {
       egresosList: []
     };
-  },
-
-  watch: {
-    egresosList(newValue, oldValue) {
-      console.log(newValue);
-    }
   },
 
   mounted() {

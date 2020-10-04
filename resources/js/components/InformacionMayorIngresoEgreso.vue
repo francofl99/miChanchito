@@ -1,9 +1,9 @@
 <template>
-  <div class="pl-2 w-56 h-16 flex flex-wrap justify-start items-center bg-pink-300 rounded">
-    <h5 class="w-full text-pink-900">
+  <div class="pl-2 w-56 h-20 flex flex-wrap justify-start items-center bg-gray-700 rounded">
+    <h5 class="w-full text-gray-200">
       Mayor Ingreso <b>${{ menorIngreso }}</b>
     </h5>
-    <h5 class="w-full text-pink-900">
+    <h5 class="w-full text-gray-200">
       Mayor egreso <b>${{ mayorIngreso }}</b>
     </h5>
   </div>

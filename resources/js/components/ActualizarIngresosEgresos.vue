@@ -1,9 +1,9 @@
 <template>
-  <div class="p-2 w-full h-32 bg-pink-300 mt-4 rounded">
+  <div class="p-2 w-full c-style bg-gray-700 mt-4 rounded ">
     <div class="w-full flex flex-wrap">
       <label
         for="ingresosEgresos"
-        class="w-full text-pink-900"
+        class="w-full text-gray-200"
       >
         Actualizar ingresos/egresos
       </label>
@@ -13,15 +13,15 @@
         v-model="ingresosEgresos"
         type="number"
         placeholder="0"
-        class="bg-pink-200 placeholder-pink-900 rounded-md pl-2 w-full"
+        class="bg-gray-500 placeholder-gray-200 text-gray-200 rounded-md pl-2 mt-2 w-full h-6"
       >
     </div>
 
-    <div class="flex">
+    <div class="flex mt-4">
       <div class="w-3/5 flex flex-wrap">
         <label
           for="ingresosEgresos"
-          class="w-full text-pink-900"
+          class="w-full text-gray-200"
         >
           Tipo
         </label>
@@ -30,7 +30,7 @@
           id="ingresosEgresos"
           v-model="tipoIngresoEgreso"
           type="number"
-          class="bg-pink-200 placeholder-pink-100 rounded-md font-light text-pink-600"
+          class="bg-gray-500 placeholder-gray-200 rounded-md mt-2 font-light text-gray-200 h-6 "
         >
           <option
             id="1"
@@ -47,7 +47,7 @@
         </select>
       </div>
 
-      <div class="w-full flex h-6 mt-5 ">
+      <div class="w-full flex mt-5 justify-between pr-2 pl-20">
         <DatePicker
           v-model="fechaDeRegistro"
           :popover="{ placement: 'bottom', visibility: 'click' }"
@@ -57,12 +57,15 @@
           </button>
         </DatePicker>
         <button
-          class="rounded-full font-semibold bg-green-300 text-black text-opacity-75 px-3"
+          class="rounded-full font-semibold bg-green-300 text-green-900 px-3 h-8"
           @click="ingresoDeDinero"
         >
           Ingreso
         </button>
-        <button class="rounded-full font-semibold bg-red-400 text-black" @click="egresoDeDinero">
+        <button
+          class="rounded-full font-semibold bg-red-300 text-red-900 px-3 h-8"
+          @click="egresoDeDinero"
+        >
           Engreso
         </button>
       </div>
@@ -132,5 +135,7 @@ export default {
 </script>
 
 <style>
-
+.c-style {
+  height: 9rem;
+}
 </style>

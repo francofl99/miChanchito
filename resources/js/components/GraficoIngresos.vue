@@ -3,7 +3,7 @@
     class="flex"
   >
     <line-chart
-      :colors="['pink']"
+      :colors="['gray']"
       :data="ingresosList.map(item => [item.fecha, item.ingreso])"
     />
   </div>
@@ -19,12 +19,6 @@ export default {
     return {
       ingresosList: []
     };
-  },
-
-  watch: {
-    ingresosList(newValue, oldValue) {
-      console.log(newValue);
-    }
   },
 
   mounted() {
