@@ -57,13 +57,13 @@
           </button>
         </DatePicker>
         <button
-          class="rounded-full font-semibold bg-green-300 text-green-900 px-3 h-8"
+          class="rounded-md font-semibold bg-green-300 text-green-900 px-3 h-8"
           @click="ingresoDeDinero"
         >
           Ingreso
         </button>
         <button
-          class="rounded-full font-semibold bg-red-300 text-red-900 px-3 h-8"
+          class="rounded-md font-semibold bg-red-300 text-red-900 px-3 h-8"
           @click="egresoDeDinero"
         >
           Engreso

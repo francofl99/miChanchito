@@ -1,6 +1,7 @@
 <template>
-  <div class=" bg-gray-400 main-style flex flex-wrap p-8">
+  <div class=" bg-gray-400 main-style flex flex-wrap p-8 justify-between">
     <SeccionIngresosEgresos />
+    <InformacionMaximoMinimoGasto />
     <Graficos />
   </div>
 </template>
@@ -8,6 +9,7 @@
 <script>
 import SeccionIngresosEgresos from "./SeccionIngresosEgresos";
 import Graficos from "./Graficos";
+import InformacionMaximoMinimoGasto from "./InformacionMaximoMinimoGasto";
 
 
 export default {
@@ -15,6 +17,7 @@ export default {
 
   components: {
     SeccionIngresosEgresos,
+    InformacionMaximoMinimoGasto,
     Graficos
   }
 };

@@ -1,6 +1,7 @@
 import Chartkick from 'vue-chartkick';
 import Chart from 'chart.js';
 import DatePicker from 'v-calendar/lib/components/date-picker.umd';
+import router from "./router";
 
 require('./bootstrap');
 window.Vue = require('vue');
@@ -16,7 +17,7 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('Inicio', require('./components/Inicio.vue').default);
+Vue.component('Home', require('../views/Home.vue').default);
 Vue.use(Chartkick.use(Chart));
 Vue.component('date-picker', DatePicker);
 
@@ -27,7 +28,8 @@ Vue.component('date-picker', DatePicker);
  */
 
 const app = new Vue({
-    el: '#app',
+  el: '#app',
+  router,
 });
 
 
