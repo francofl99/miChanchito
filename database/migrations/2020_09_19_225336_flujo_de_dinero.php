@@ -15,7 +15,7 @@ class FlujoDeDinero extends Migration
     {
         Schema::create('ingreso_de_dinero', function (Blueprint $table) {
             $table->increments("id")->start_from(0);
-            $table->string("ingreso");
+            $table->integer("ingreso");
             $table->string("tipo");
             $table->string("fecha");
 
@@ -23,7 +23,7 @@ class FlujoDeDinero extends Migration
 
         Schema::create('egreso_de_dinero', function (Blueprint $table) {
             $table->increments("id")->start_from(0);
-            $table->string("egreso");
+            $table->integer("egreso");
             $table->string("tipo");
             $table->string("fecha");
         }); 

@@ -52,18 +52,21 @@
           v-model="fechaDeRegistro"
           :popover="{ placement: 'bottom', visibility: 'click' }"
         >
-          <button class="p-2 bg-blue-500 hover:bg-blue-600 text-white rounded focus:outline-none">
-            <VueHicons name="calendar" />
+          <button class="transition duration-150 p-2 bg-red-300  hover:bg-red-400 text-red-900 rounded focus:outline-none">
+            <VueHicons
+              is-filled
+              name="calendar"
+            />
           </button>
         </DatePicker>
         <button
-          class="rounded-md font-semibold bg-green-300 text-green-900 px-3 h-8"
+          class="transition duration-150 rounded-md font-semibold bg-green-300 hover:bg-green-400 text-green-900 px-3 h-8"
           @click="ingresoDeDinero"
         >
           Ingreso
         </button>
         <button
-          class="rounded-md font-semibold bg-red-300 text-red-900 px-3 h-8"
+          class="transition duration-150 rounded-md font-semibold bg-red-300 hover:bg-red-400 text-red-900 px-3 h-8"
           @click="egresoDeDinero"
         >
           Engreso

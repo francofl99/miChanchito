@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between items-center h-12 w-full bg-gray-800">
+  <div class="flex justify-between h-12 items-center w-full bg-gray-800">
     <h3 class="text-gray-200 w-auto ml-4 font-semibold text-lg cursor-pointer">
       Mi Chanchito
     </h3>
@@ -17,5 +17,8 @@ export default {
 </script>
 
 <style>
+.nav-style {
+  height: 3.5%;
+}
 
 </style>

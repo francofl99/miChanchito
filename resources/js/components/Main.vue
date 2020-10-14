@@ -1,8 +1,14 @@
 <template>
-  <div class=" bg-gray-400 main-style flex flex-wrap p-8 justify-between">
-    <SeccionIngresosEgresos />
+  <div class="bg-gray-400 main-style flex flex-wrap p-8 justify-between">
+    <SeccionIngresosEgresos
+      :ingresos="ingresos"
+      :egresos="egresos"
+    />
     <InformacionMaximoMinimoGasto />
-    <Graficos />
+    <Graficos
+      :ingresos="ingresos"
+      :egresos="egresos"
+    />
   </div>
 </template>
 
@@ -10,7 +16,7 @@
 import SeccionIngresosEgresos from "./SeccionIngresosEgresos";
 import Graficos from "./Graficos";
 import InformacionMaximoMinimoGasto from "./InformacionMaximoMinimoGasto";
-
+import axios from 'axios';
 
 export default {
   name: "Main",
@@ -19,13 +25,40 @@ export default {
     SeccionIngresosEgresos,
     InformacionMaximoMinimoGasto,
     Graficos
+  },
+
+  data() {
+    return {
+      ingresos: [],
+      egresos: [],
+    };
+  },
+
+  created() {
+    this.getIngresos();
+    this.getEgresos();
+  },
+
+  methods: {
+    getIngresos() {
+      axios.get(`/api/bringAllIncome`)
+        .then((response) => {
+          this.ingresos = response.data;
+        });
+    },
+    getEgresos() {
+      return axios.get(`/api/bringAllEpanses`)
+        .then((response) => {
+          this.egresos = response.data;
+        });
+    },
   }
 };
 </script>
 
-<style scoped>
+<style>
 .main-style {
-  width: calc(100vw - 3rem);
-  height: calc(100vh - 3rem);
+  width: 96.5%;
 }
+
 </style>
