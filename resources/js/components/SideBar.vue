@@ -40,7 +40,7 @@ export default {
       },
       {
         icon: "cog",
-        route: "config"
+        route: "settings"
       },
       {
         icon: "database",
@@ -51,7 +51,10 @@ export default {
 
   methods: {
     goToRoute(route) {
-      this.$router.push(`/${route}`);
+      let currentRoute = this.$router.currentRoute.name;
+      if (route != currentRoute) {
+        this.$router.push(`/${route}`);
+      }
     }
   }
 };

@@ -2,11 +2,12 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from "../views/Home";
 import PageNotFound from "../views/PageNotFound";
+import Settings from "../views/Settings";
 
 Vue.use(Router);
 
 export default new Router({
-  modo: "history",
+  mode: "history",
 
   routes: [
     {
@@ -16,9 +17,14 @@ export default new Router({
       component: Home
     },
     {
+      path: '/settings',
+      name: 'Settings',
+      component: Settings
+    },
+    {
       path: '/*',
       name: '404 Page Not Found',
       component: PageNotFound
-    }
+    },
   ]
 });
