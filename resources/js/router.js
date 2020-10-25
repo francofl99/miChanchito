@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Home from "../views/Home";
 import PageNotFound from "../views/PageNotFound";
 import Settings from "../views/Settings";
+import Exchange from "../views/Exchange";
 
 Vue.use(Router);
 
@@ -20,6 +21,11 @@ export default new Router({
       path: '/settings',
       name: 'Settings',
       component: Settings
+    },
+    {
+      path: '/exchance',
+      name: 'Exchange',
+      component: Exchange
     },
     {
       path: '/*',

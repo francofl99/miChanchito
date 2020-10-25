@@ -8,7 +8,7 @@
 import ViewContainer from "./ViewContainer";
 
 export default {
-  name: "Settings",
+  name: "Exchange",
 
   components: {
     ViewContainer
